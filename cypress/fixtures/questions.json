@@ -1,0 +1,47 @@
+[
+  {
+    "question": "Test question one?",
+    "answers": [
+      { "text": "This one is wrong", "isCorrect": false },
+      { "text": "This is correct", "isCorrect": true },
+      { "text": "This is also wrong", "isCorrect": false },
+      { "text": "Also an incorrect answer", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Test question two?",
+    "answers": [
+      { "text": "This one is wrong", "isCorrect": false },
+      { "text": "This is correct", "isCorrect": true },
+      { "text": "This is also wrong", "isCorrect": false },
+      { "text": "Also an incorrect answer", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Test question three?",
+    "answers": [
+      { "text": "This one is wrong", "isCorrect": false },
+      { "text": "This is correct", "isCorrect": true },
+      { "text": "This is also wrong", "isCorrect": false },
+      { "text": "Also an incorrect answer", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Test question four?",
+    "answers": [
+      { "text": "This one is wrong", "isCorrect": false },
+      { "text": "This is correct", "isCorrect": true },
+      { "text": "This is also wrong", "isCorrect": false },
+      { "text": "Also an incorrect answer", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Test question five?",
+    "answers": [
+      { "text": "This one is wrong", "isCorrect": false },
+      { "text": "This is correct", "isCorrect": true },
+      { "text": "This is also wrong", "isCorrect": false },
+      { "text": "Also an incorrect answer", "isCorrect": false }
+    ]
+  }
+]

@@ -1,58 +1,19 @@
 import React from "react";
 import Quiz from "../../client/src/components/Quiz";
 
-const questions = [
-  {
-    question: "Test question one?",
-    answers: [
-      { text: "This one is wrong", isCorrect: false },
-      { text: "This is correct", isCorrect: true },
-      { text: "This is also wrong", isCorrect: false },
-      { text: "Also an incorrect answer", isCorrect: false },
-    ],
-  },
-  {
-    question: "Test question two?",
-    answers: [
-      { text: "This one is wrong", isCorrect: false },
-      { text: "This is correct", isCorrect: true },
-      { text: "This is also wrong", isCorrect: false },
-      { text: "Also an incorrect answer", isCorrect: false },
-    ],
-  },
-  {
-    question: "Test question three?",
-    answers: [
-      { text: "This one is wrong", isCorrect: false },
-      { text: "This is correct", isCorrect: true },
-      { text: "This is also wrong", isCorrect: false },
-      { text: "Also an incorrect answer", isCorrect: false },
-    ],
-  },
-  {
-    question: "Test question four?",
-    answers: [
-      { text: "This one is wrong", isCorrect: false },
-      { text: "This is correct", isCorrect: true },
-      { text: "This is also wrong", isCorrect: false },
-      { text: "Also an incorrect answer", isCorrect: false },
-    ],
-  },
-  {
-    question: "Test question five?",
-    answers: [
-      { text: "This one is wrong", isCorrect: false },
-      { text: "This is correct", isCorrect: true },
-      { text: "This is also wrong", isCorrect: false },
-      { text: "Also an incorrect answer", isCorrect: false },
-    ],
-  },
-];
-
 describe("<Quiz />", () => {
+  let questions: any[] = [];
+
   beforeEach(() => {
-    // mock the getQuestions API call
-    cy.intercept("GET", "api/questions/random", questions).as("getQuestions");
+    cy.fixture("questions.json").then((mockQuestions) => {
+      // mock the getQuestions API call
+      cy.intercept("GET", "api/questions/random", mockQuestions).as(
+        "getQuestions"
+      );
+
+      // set the questions for the test
+      questions = mockQuestions;
+    });
   });
 
   it("renders the start screen and starts the quiz", () => {
