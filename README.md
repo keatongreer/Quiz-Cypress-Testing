@@ -17,7 +17,7 @@ This project is covered under the following license: MIT License
 This project was tested using Visual Studio Code, Node.js, and Cypress
 
 ## Video
-[Click here to watch a video walkthrough of this project](https://youtube.com)
+[Click here to watch a video walkthrough of this project](https://youtu.be/B6s748MJnCE)
 
 ## Questions
 Github: keatongreer
